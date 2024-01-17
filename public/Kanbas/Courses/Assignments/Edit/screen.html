@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment Edit</title>
+  </head>
+  <body>
+    <table width="100%">
+      <tbody>
+        <tr>
+          <!--Navigation-->
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="/Kanbas/Account/Navigation/index.html">Account</a>
+              </li>
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+              </li>
+              <li>
+                <a href="#">Calendar</a>
+              </li>
+              <li>
+                <a href="#">Inbox</a>
+              </li>
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Studio</a>
+              </li>
+              <li>
+                <a href="#">Commons</a>
+              </li>
+              <li>
+                <a href="#">Help</a>
+              </li>
+            </ul>
+          </td>
+          <!--Course Navigation-->
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html">
+                  Home</a>
+              </li>
+              <li>
+                <a href="#">
+                  Modules</a>
+              </li>
+              <li>
+                <a href="#">
+                  Piazza</a>
+              </li>
+              <li>
+                <a href="#">
+                  Zoom Meetings</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Assignments</a>
+              </li>
+              <li>
+                <a href="#">Quizzes</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+              </li>
+              <li>
+                <a href="#">People</a>
+              </li>
+              <li>
+                <a href="#">Panopto Video</a>
+              </li>
+              <li>
+                <a href="#">Discussion</a>
+              </li>
+              <li>
+                <a href="#">Announcements</a>
+              </li>
+              <li>
+                <a href="#">Pages</a>
+              </li>
+              <li>
+                <a href="#">Files</a>
+              </li>
+              <li>
+                <a href="#">Rubrics</a>
+              </li>
+              <li>
+                <a href="#">Outcomes</a>
+              </li>
+              <li>
+                <a href="#">Collaborations</a>
+              </li>
+              <li>
+                <a href="#">Syllabus</a>
+              </li>
+              <li>
+                <a href="#">Settings</a>
+              </li>
+            </ul>
+          </td>
+          <!--Assignment Edit-->
+          <td valign="top">
+            <!--Dropdown Header-->
+            <select id="assign-editor">
+              <option value="SPEED-GRADER">Speed Grader</option>
+              <option value="DUPLICATE">Duplicate</option>
+              <option value="DELETE">Delete</option>
+              <option value="MOVE-TO">Move To...</option>
+              <option value="SEND-TO">Send To...</option>
+              <option value="COPY-TO">Copy To...</option>
+              <option value="SHARE-TO-COMMONS">Share to Commons</option>
+            </select>
+            <hr/>
+            <!--Assignment Fields-->
+            <h2>Assignment Name</h2>
+            <form>
+              <input value="A1 - ENV + HTML"/><br/><br/>
+              <textarea cols="30" rows="3">This is the assignment description</textarea><br/><br/>
+              <label for="points">Points</label><br/>
+              <input value="100"/><br/><br/>
+              <label for="assignment-group">Assignment Group</label><br/>
+              <select id="assignment-group">
+                <option value="ASSIGNMENTS">ASSIGNMENTS</option><br/><br/>
+              </select><br/><br/>
+              <label for="display-as">Display Grade as</label><br/>
+              <select id="display-as">
+                <option value="PERCENTAGE">Percentage</option><br/><br/>
+              </select><br/><br/>
+              <label for="submission-type">Submission Type</label><br/>
+              <select id="submission-type">
+                <option value="ONLINE">Online</option>
+              </select><br/><br/>
+              <!--Online Entry Options-->
+              <label>Online Entry Options</label><br/>
+              <input type="checkbox" value="TEXT-ENTRY"
+                name="online-options" id="option-text-entry"/>
+              <label for="option-text-entry">Text Entry</label><br/>
+              <input type="checkbox" value="WEBSITE_URL"
+                name="online-options" id="option-website-url"/>
+              <label for="option-website-url">Website URL</label><br/>
+              <input type="checkbox" value="MEDIA-RECORDINGS"
+                name="online-options" id="option-media-recordings"/>
+              <label for="option-media-recordings">Media Recordings</label><br/>
+              <input type="checkbox" value="ANNOTATION"
+                name="online-options" id="option-annotation"/>
+              <label for="option-annotation">Student Annotation</label><br/>
+              <input type="checkbox" value="FILE-UPLOADS"
+                name="online-options" id="option-file-uploads"/>
+              <label for="option-file-uploads">File Uploads</label><br/><br/>
+              <!--Assignment Date and Range-->
+              <p>Assign</p>
+              <label for="assign-to">Assign to</label><br/>
+              <input id="assign-to" value="Everyone"/><br/><br/>
+              <label for="due-date">Due</label><br/>
+              <input id="due-date" type="date" value="2021-01-01"/><br/><br/>
+              <label for="available-from">Available from</label><br/>
+              <input id="available-from" type="date" value="2021-01-01"/><br/><br/>
+              <label for="available-until">Until</label><br/>
+              <input id="available-until" type="date" value="2021-01-01"/><br/><br/>
+              <!--Cancel and Save-->
+              <a href="/Kanbas/Courses/Assignments/screen.html">
+                <button type="button">Cancel</button>
+              </a>
+              <a href="/Kanbas/Courses/Assignments/screen.html">
+                <button type="button">Save</button>
+              </a>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>  
+  </body>
+</html>
