@@ -2,46 +2,61 @@
 <html>
   <head>
     <title>Assignments</title>
+
+    <link href="/Kanbas/styles.css" rel="stylesheet" />
+    <link href="/Kanbas/Navigation/index.css" rel="stylesheet" />
+    <link href="/Kanbas/Courses/Navigation/index.css" rel="stylesheet" />
+    <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   </head>
   <body>
     <table width="100%">
       <tbody>
         <tr>
           <!--NAVIGATION-->
-          <td valign="top">
-            <ul>
+          <td valign="top" style="width: 80px;" class="wd-kanbas-navigation">
+            <ul class="wd-kanbas-navigation">
+              <li><a href="https://northeastern.edu">N</a></li>
               <li>
-                <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+                <a href="/Kanbas/Account/Profile/screen.html">
+                  <i class="fa fa-user-circle-o" style="color: white;"></i>Account</a>
               </li>
               <li>
-                <a href="#">Dashboard</a>
+                <a href="/Kanbas/Dashboard/screen.html">
+                  <i class="fa fa-tachometer"></i> <div>Dashboard</div></a>
+              </li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Home/screen.html">
+                  <i class="fa fa-book"></i> <div>Courses</div></a>
               </li>
               <li>
-                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                <a href="#">
+                  <i class="fa fa-calendar"></i> <div>Calendar</div></a>
               </li>
               <li>
-                <a href="#">Calendar</a>
+                <a href="#">
+                  <i class="fa fa-inbox"></i> <div>Inbox</div></a>
               </li>
               <li>
-                <a href="#">Inbox</a>
+                <a href="#">
+                  <i class="fa fa-clock-o"></i> <div>History</div></a>
               </li>
               <li>
-                <a href="#">History</a>
+                <a href="#">
+                  <i class="fa fa-television"></i> <div>Studio</div></a>
               </li>
               <li>
-                <a href="#">Studio</a>
+                <a href="#">
+                  <i class="fa fa-arrow-circle-o-right"></i> <div>Commons</div></a>
               </li>
               <li>
-                <a href="#">Commons</a>
-              </li>
-              <li>
-                <a href="#">Help</a>
+                <a href="#">
+                  <i class="fa fa-question-circle-o"></i> <div>Help</div></a>
               </li>
             </ul>
           </td>
           <!--Course Navigation-->
-          <td valign="top">
-            <ul>
+          <td valign="top" class="wd-course-navigation">
+            <ul class="wd-course-navigation">
               <li>
                 <a href="/Kanbas/Courses/Home/screen.html">
                   Home</a>
@@ -58,7 +73,7 @@
                 <a href="#">
                   Zoom Meetings</a>
               </li>
-              <li>
+              <li class="wd-active">
                 <a href="/Kanbas/Courses/Assignments/screen.html">
                   Assignments</a>
               </li>
