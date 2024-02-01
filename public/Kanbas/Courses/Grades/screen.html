@@ -13,12 +13,12 @@
       <tbody>
         <tr>
           <!--Navigation-->
-          <td valign="top">
+          <td valign="top" class="wd-kanbas-navigation">
             <ul class="wd-kanbas-navigation">
               <li><a href="https://northeastern.edu">N</a></li>
               <li>
                 <a href="/Kanbas/Account/Profile/screen.html">
-                  <i class="fa fa-user-circle-o" style="color: white;"></i>Account</a>
+                  <i class="fa fa-user-circle-o" style="color: white;"></i><div>Account</div></a>
               </li>
               <li>
                 <a href="/Kanbas/Dashboard/screen.html">
@@ -120,207 +120,209 @@
           </td>
           <!--Grades-->
           <td valign="top">
-            <!--Buttons and Dropdowns-->
-            <select>
-              <option value="GRADEBOOK">Gradebook</option>
-            </select>
-            <button type="button">Import</button>
-            <select id="select_export">
-              <option value="EXPORT">Export</option>
-            </select>
-            <button type="button">Configure</button>
-            <!--Filters Section-->
-            <h2>Student Names</h2>
-            <form id="student-names">
-              <input id="search-students" placeholder="Search Students"/><br/>
-            </form>
-            <h2>Assignment Names</h2>
-            <form>
-              <input id="search_assignments" placeholder="Search Assignments"/><br/><br/>
-            </form>
-            <button>Apply Filters</button><br/><br/>
-            <table border="1" width="100%">
-              <!--TABLE HEADER-->
-              <thead>
-                <th>Student Name</th>
-                <th>A1 SETUP Out of 100</th>
-                <th>A2 HTML Out of 100</th>
-                <th>A3 CSS Out of 100</th>
-                <th>A4 BOOTSTRAP Out of 100</th>
-                <th>A5 JAVASCRIPT Out of 100</th>
-                <th>A6 REACT Out of 100</th>
-                <th>A7 REDUX Out of 100</th>
-                <th>A8 NODE Out of 100</th>
-                <th>A9 MONGO Out of 100</th>
-              </thead>
-              <!--TABLE BODY-->
-              <tbody>
-                <tr>
-                  <td>Alice Wonderland</td>
-                  <td align="center">98</td>
-                  <td align="center">89</td>
-                  <td align="center">87</td>
-                  <td align="center">90</td>
-                  <td align="center">89</td>
-                  <td align="center">94</td>
-                  <td align="center">88</td>
-                  <td align="center">87</td>
-                  <td align="center">100</td>
-                </tr>
-                <tr>
-                  <td>Princess Leia</td>
-                  <td align="center">98</td>
-                  <td align="center">80</td>
-                  <td align="center">87</td>
-                  <td align="center">86</td>
-                  <td align="center">100</td>
-                  <td align="center">94</td>
-                  <td align="center">
-                    <input value="85" size="4" type="number"/>
-                  </td>
-                  <td align="center">84</td>
-                  <td align="center">92</td>
-                </tr>
-                <tr>
-                  <td>Luke Skywalker</td>
-                  <td align="center">
-                    <input value="99" size="4" type="number"/>
-                  </td>
-                  <td align="center">88</td>
-                  <td align="center">97</td>
-                  <td align="center">82</td>
-                  <td align="center">96</td>
-                  <td align="center">93</td>
-                  <td align="center">95</td>
-                  <td align="center">100</td>
-                  <td align="center">93</td>
-                </tr>
-                <tr>
-                  <td>Han Solo</td>
-                  <td align="center">83</td>
-                  <td align="center">99</td>
-                  <td align="center">94</td>
-                  <td align="center">98</td>
-                  <td align="center">86</td>
-                  <td align="center">85</td>
-                  <td align="center">
-                    <input value="86" size="4" type="number"/>
-                  </td>
-                  <td align="center">80</td>
-                  <td align="center">84</td>
-                </tr>
-                <tr>
-                  <td>Lando Calresian</td>
-                  <td align="center">83</td>
-                  <td align="center">
-                    <input value="92" size="4" type="number"/>
-                  </td>
-                  <td align="center">80</td>
-                  <td align="center">80</td>
-                  <td align="center">92</td>
-                  <td align="center">92</td>
-                  <td align="center">94</td>
-                  <td align="center">87</td>
-                  <td align="center">95</td>
-                </tr>
-                <tr>
-                  <td>Boba Fett</td>
-                  <td align="center">85</td>
-                  <td align="center">89</td>
-                  <td align="center">94</td>
-                  <td align="center">83</td>
-                  <td align="center">83</td>
-                  <td align="center">84</td>
-                  <td align="center">91</td>
-                  <td align="center">87</td>
-                  <td align="center">96</td>
-                </tr>
-                <tr>
-                  <td>Darth Vader</td>
-                  <td align="center">81</td>
-                  <td align="center">81</td>
-                  <td align="center">
-                    <input value="96" size="4" type="number"/>
-                  </td>
-                  <td align="center">80</td>
-                  <td align="center">89</td>
-                  <td align="center">88</td>
-                  <td align="center">82</td>
-                  <td align="center">80</td>
-                  <td align="center">82</td>
-                </tr>
-                <tr>
-                  <td>Obi-Wan Kenobi</td>
-                  <td align="center">
-                    <input value="85" size="4" type="number"/>
-                  </td>
-                  <td align="center">99</td>
-                  <td align="center">87</td>
-                  <td align="center">82</td>
-                  <td align="center">88</td>
-                  <td align="center">83</td>
-                  <td align="center">88</td>
-                  <td align="center">92</td>
-                  <td align="center">80</td>
-                </tr>
-                <tr>
-                  <td>R2-D2</td>
-                  <td align="center">81</td>
-                  <td align="center">
-                    <input value="92" size="4" type="number"/>
-                  </td>
-                  <td align="center">
-                    <input value="82" size="4" type="number"/>
-                  </td>
-                  <td align="center">86</td>
-                  <td align="center">83</td>
-                  <td align="center">
-                    <input value="84" size="4" type="number"/>
-                  </td>
-                  <td align="center">98</td>
-                  <td align="center">85</td>
-                  <td align="center">96</td>
-                </tr>
-                <tr>
-                  <td>C-3PO</td>
-                  <td align="center">94</td>
-                  <td align="center">98</td>
-                  <td align="center">83</td>
-                  <td align="center">83</td>
-                  <td align="center">100</td>
-                  <td align="center">96</td>
-                  <td align="center">96</td>
-                  <td align="center">85</td>
-                  <td align="center">87</td>
-                </tr>
-                <tr>
-                  <td>Yoda</td>
-                  <td align="center">80</td>
-                  <td align="center">89</td>
-                  <td align="center">99</td>
-                  <td align="center">89</td>
-                  <td align="center">96</td>
-                  <td align="center">85</td>
-                  <td align="center">96</td>
-                  <td align="center">92</td>
-                  <td align="center">85</td>
-                </tr>
-                <tr>
-                  <td>Admiral Ackbar</td>
-                  <td align="center">82</td>
-                  <td align="center">88</td>
-                  <td align="center">95</td>
-                  <td align="center">100</td>
-                  <td align="center">
-                    <input value="93" size="4" type="number"/>
-                  </td>
-                  <td align="center">98</td>
-                  <td align="center">85</td>
-                  <td align="center">87</td>
-                  <td align="center">99</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="wd-column">
+              <!--Buttons and Dropdowns-->
+              <select>
+                <option value="GRADEBOOK">Gradebook</option>
+              </select>
+              <button type="button">Import</button>
+              <select id="select_export">
+                <option value="EXPORT">Export</option>
+              </select>
+              <button type="button">Configure</button>
+              <!--Filters Section-->
+              <h2>Student Names</h2>
+              <form id="student-names">
+                <input id="search-students" placeholder="Search Students"/><br/>
+              </form>
+              <h2>Assignment Names</h2>
+              <form>
+                <input id="search_assignments" placeholder="Search Assignments"/><br/><br/>
+              </form>
+              <button>Apply Filters</button><br/><br/>
+              <table border="1" width="100%">
+                <!--TABLE HEADER-->
+                <thead>
+                  <th>Student Name</th>
+                  <th>A1 SETUP Out of 100</th>
+                  <th>A2 HTML Out of 100</th>
+                  <th>A3 CSS Out of 100</th>
+                  <th>A4 BOOTSTRAP Out of 100</th>
+                  <th>A5 JAVASCRIPT Out of 100</th>
+                  <th>A6 REACT Out of 100</th>
+                  <th>A7 REDUX Out of 100</th>
+                  <th>A8 NODE Out of 100</th>
+                  <th>A9 MONGO Out of 100</th>
+                </thead>
+                <!--TABLE BODY-->
+                <tbody>
+                  <tr>
+                    <td>Alice Wonderland</td>
+                    <td align="center">98</td>
+                    <td align="center">89</td>
+                    <td align="center">87</td>
+                    <td align="center">90</td>
+                    <td align="center">89</td>
+                    <td align="center">94</td>
+                    <td align="center">88</td>
+                    <td align="center">87</td>
+                    <td align="center">100</td>
+                  </tr>
+                  <tr>
+                    <td>Princess Leia</td>
+                    <td align="center">98</td>
+                    <td align="center">80</td>
+                    <td align="center">87</td>
+                    <td align="center">86</td>
+                    <td align="center">100</td>
+                    <td align="center">94</td>
+                    <td align="center">
+                      <input value="85" size="4" type="number"/>
+                    </td>
+                    <td align="center">84</td>
+                    <td align="center">92</td>
+                  </tr>
+                  <tr>
+                    <td>Luke Skywalker</td>
+                    <td align="center">
+                      <input value="99" size="4" type="number"/>
+                    </td>
+                    <td align="center">88</td>
+                    <td align="center">97</td>
+                    <td align="center">82</td>
+                    <td align="center">96</td>
+                    <td align="center">93</td>
+                    <td align="center">95</td>
+                    <td align="center">100</td>
+                    <td align="center">93</td>
+                  </tr>
+                  <tr>
+                    <td>Han Solo</td>
+                    <td align="center">83</td>
+                    <td align="center">99</td>
+                    <td align="center">94</td>
+                    <td align="center">98</td>
+                    <td align="center">86</td>
+                    <td align="center">85</td>
+                    <td align="center">
+                      <input value="86" size="4" type="number"/>
+                    </td>
+                    <td align="center">80</td>
+                    <td align="center">84</td>
+                  </tr>
+                  <tr>
+                    <td>Lando Calresian</td>
+                    <td align="center">83</td>
+                    <td align="center">
+                      <input value="92" size="4" type="number"/>
+                    </td>
+                    <td align="center">80</td>
+                    <td align="center">80</td>
+                    <td align="center">92</td>
+                    <td align="center">92</td>
+                    <td align="center">94</td>
+                    <td align="center">87</td>
+                    <td align="center">95</td>
+                  </tr>
+                  <tr>
+                    <td>Boba Fett</td>
+                    <td align="center">85</td>
+                    <td align="center">89</td>
+                    <td align="center">94</td>
+                    <td align="center">83</td>
+                    <td align="center">83</td>
+                    <td align="center">84</td>
+                    <td align="center">91</td>
+                    <td align="center">87</td>
+                    <td align="center">96</td>
+                  </tr>
+                  <tr>
+                    <td>Darth Vader</td>
+                    <td align="center">81</td>
+                    <td align="center">81</td>
+                    <td align="center">
+                      <input value="96" size="4" type="number"/>
+                    </td>
+                    <td align="center">80</td>
+                    <td align="center">89</td>
+                    <td align="center">88</td>
+                    <td align="center">82</td>
+                    <td align="center">80</td>
+                    <td align="center">82</td>
+                  </tr>
+                  <tr>
+                    <td>Obi-Wan Kenobi</td>
+                    <td align="center">
+                      <input value="85" size="4" type="number"/>
+                    </td>
+                    <td align="center">99</td>
+                    <td align="center">87</td>
+                    <td align="center">82</td>
+                    <td align="center">88</td>
+                    <td align="center">83</td>
+                    <td align="center">88</td>
+                    <td align="center">92</td>
+                    <td align="center">80</td>
+                  </tr>
+                  <tr>
+                    <td>R2-D2</td>
+                    <td align="center">81</td>
+                    <td align="center">
+                      <input value="92" size="4" type="number"/>
+                    </td>
+                    <td align="center">
+                      <input value="82" size="4" type="number"/>
+                    </td>
+                    <td align="center">86</td>
+                    <td align="center">83</td>
+                    <td align="center">
+                      <input value="84" size="4" type="number"/>
+                    </td>
+                    <td align="center">98</td>
+                    <td align="center">85</td>
+                    <td align="center">96</td>
+                  </tr>
+                  <tr>
+                    <td>C-3PO</td>
+                    <td align="center">94</td>
+                    <td align="center">98</td>
+                    <td align="center">83</td>
+                    <td align="center">83</td>
+                    <td align="center">100</td>
+                    <td align="center">96</td>
+                    <td align="center">96</td>
+                    <td align="center">85</td>
+                    <td align="center">87</td>
+                  </tr>
+                  <tr>
+                    <td>Yoda</td>
+                    <td align="center">80</td>
+                    <td align="center">89</td>
+                    <td align="center">99</td>
+                    <td align="center">89</td>
+                    <td align="center">96</td>
+                    <td align="center">85</td>
+                    <td align="center">96</td>
+                    <td align="center">92</td>
+                    <td align="center">85</td>
+                  </tr>
+                  <tr>
+                    <td>Admiral Ackbar</td>
+                    <td align="center">82</td>
+                    <td align="center">88</td>
+                    <td align="center">95</td>
+                    <td align="center">100</td>
+                    <td align="center">
+                      <input value="93" size="4" type="number"/>
+                    </td>
+                    <td align="center">98</td>
+                    <td align="center">85</td>
+                    <td align="center">87</td>
+                    <td align="center">99</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </td>
         </tr>
       </tbody>
