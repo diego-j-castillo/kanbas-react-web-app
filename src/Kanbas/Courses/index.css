@@ -1,0 +1,94 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding:  0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  font-weight: 700;
+  background-color: #f5f5f5;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid gray !important;
+  border-left: 4px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+.wd-modules a {
+  color: red;
+  text-decoration: none;
+}
+
+.btn-white.override-bs {
+  background-color: #f5f5f5;
+  border-color: gray;
+  margin: 1px;
+}
+
+.wd-course-header {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+  margin-bottom: 10px;
+}
+
+.wd-course-header .wd-header-option {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.wd-course-header .wd-header-option a {
+  color:red;
+  text-decoration: none;
+}
+
+.wd-sidebar {
+  margin: 5px;
+  width: 250px;
+}
+
+.wd-sidebar .wd-course-header{
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.wd-sidebar li {
+  list-style: none;
+  margin: 5px;
+}
+
+.wd-sidebar li a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-subtitle {
+  font-size: 12px;
+  color: gray;
+}
+
