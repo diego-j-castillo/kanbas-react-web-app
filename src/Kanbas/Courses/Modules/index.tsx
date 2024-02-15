@@ -4,7 +4,9 @@ function Modules() {
   return (
     <div>
       <ModuleHeader/>
-      <ModuleList />
+      <div className="flex-fill">
+        <ModuleList />
+      </div>
     </div>
   );
 }

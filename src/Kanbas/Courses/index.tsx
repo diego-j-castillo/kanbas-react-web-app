@@ -1,27 +1,19 @@
-import { courses } from "../../Kanbas/Database";
-import { Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
-import { HiMiniBars3 } from "react-icons/hi2";
+import { Navigate, Route, Routes} from "react-router-dom";
 import CourseNavigation from "./Navigation";
 import "../styles.css";
+import "./index.css"
 import Modules from "./Modules";
 import Home from "./Home";
+import CourseHeader from "./CourseHeader";
 
 function Courses() {
-  const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
-  
-  const { pathname } = useLocation();
-  let pathParams = pathname.split('/');
-  let courseHeader = "";
-  for (let index = 4; index < pathParams.length; index++) {
-    courseHeader += `> ${pathParams[index]}`;
-  }
-
   return (
     <div>
-      <div className="wd-course-header"><HiMiniBars3 /> {course?.number}.{course?._id} {course?.name} {courseHeader} </div>
+      <CourseHeader/>
       <div className="d-flex">
-        <CourseNavigation />
+        <div className="d-none d-md-block wd-column">
+          <CourseNavigation />
+        </div>
         <div className="wd-column" style={{flexGrow : 1}}>
           <Routes>
             <Route path="/" element={<Navigate to="Home"/>} />

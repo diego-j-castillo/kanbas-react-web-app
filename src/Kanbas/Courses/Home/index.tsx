@@ -8,8 +8,12 @@ function Home() {
     <div>
       <ModuleHeader/>
       <div className="d-flex">
-        <ModuleList />
-        <CourseStatus />
+        <div className="flex-fill">
+          <ModuleList />
+        </div>
+        <div className="sm-none d-none d-lg-block">
+          <CourseStatus />
+        </div>
       </div>
     </div>
   );

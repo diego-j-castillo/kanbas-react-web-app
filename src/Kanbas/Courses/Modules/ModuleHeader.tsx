@@ -2,7 +2,7 @@ import { FaCheckCircle, FaEllipsisV } from "react-icons/fa";
 
 function ModuleHeader() {
   return (
-    <div className="flex-fill">
+    <div>
       <p className="text-end wd-course-header">
         <button className="btn btn-white override-bs" type="button" id="collapse-all-button">Collapse All</button>
         <button className="btn btn-white override-bs" type="button" id="view-progress-button"> View Progress</button>
