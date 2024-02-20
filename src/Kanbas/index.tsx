@@ -1,4 +1,3 @@
-import Nav from "../Nav";
 import { Navigate, Route, Routes } from "react-router";
 import "./styles.css";
 import KanbasNavigation from "./Navigation";
@@ -8,7 +7,6 @@ import Courses from "./Courses";
 function Kanbas() {
   return (
     <>
-      <Nav/>
       <div className="d-flex">
         <div className="d-none d-sm-block">
           <KanbasNavigation/>

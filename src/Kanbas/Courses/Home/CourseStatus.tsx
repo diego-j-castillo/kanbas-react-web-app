@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../../styles.css";
 import {FaArrowAltCircleRight, FaBan, FaBell, FaBullhorn, FaCalendar, FaChartBar, FaDownload, FaRegCheckCircle, FaRegDotCircle, FaTimes} from "react-icons/fa";
+import { assignments } from "../../Database";
 
 function CourseStatus() {
+  const { courseId } =  useParams();
+  const assignmentList = assignments.filter(
+    (assignment) => assignment.course === courseId);
+
   return (
     <div className="wd-sidebar wd-column">
       {/* COURSE STATUS AND BUTTONS */}
@@ -31,11 +36,19 @@ function CourseStatus() {
       <div>
         <div className="wd-course-header">To Do</div>
         <ul className="list-group">
-          <li>
-            <Link to=".">Grade A1 - ENV + HTML</Link>
-            <FaTimes/><br/>
-            <div className="wd-subtitle">100 points - Sep 18 at 11:59 pm</div>
-          </li>
+          {assignmentList.map((assignment) => (
+            <li>
+              <div className="d-flex">
+                <div className="flex-grow-1">
+                <Link to={`/Kanbas/Courses/${courseId}/Assignments`}>
+                  {assignment.title}
+                </Link> <br/>
+                <span className="wd-subtitle">{assignment.pts} points | {assignment.dueDate}</span>
+                </div>
+                <FaTimes/><br/>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
       {/* COMING UP */}
