@@ -8,7 +8,7 @@ function Kanbas() {
   return (
     <>
       <div className="d-flex">
-        <div className="d-none d-sm-block">
+        <div className="d-none d-sm-block" style={{"width": "80px"}}>
           <KanbasNavigation/>
         </div>
         <div style={{ flexGrow: 1}}>

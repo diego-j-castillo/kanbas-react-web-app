@@ -39,7 +39,7 @@ function CourseHeader() {
         <div className="collapse" id="courseNavDrop">
           <CourseNavigation/>
         </div>
-        <div className="collapse collapse-horizontal" id="kanbasNavDrop">
+        <div className="collapse" id="kanbasNavDrop">
           <KanbasNavigation/>
         </div>
       </div>
