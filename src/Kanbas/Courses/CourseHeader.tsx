@@ -2,7 +2,6 @@ import { useLocation, useParams } from "react-router";
 import { courses } from "../Database";
 import "./index.css"
 import { FaBars, FaChevronDown, FaChevronRight, FaEye, FaGlasses } from "react-icons/fa";
-import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js";
 import CourseNavigation from "./Navigation";
 import KanbasNavigation from "../Navigation";
 
