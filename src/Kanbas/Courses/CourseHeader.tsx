@@ -13,7 +13,7 @@ function CourseHeader() {
   let pathParams = pathname.split('/');
 
   return (
-    <div>
+    <div> 
       {/* Large Header */}
       <div className="wd-course-header d-none d-sm-block"> <FaBars className="me-2"/>  
         <span> {course?.number}.{course?._id} {course?.name} <FaChevronRight/> {pathParams[pathParams.length - 1]} </span>
