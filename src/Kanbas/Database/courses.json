@@ -4,11 +4,5 @@
   { "_id": "CS101", "name": "WebDev", "number": "CS4550", "startDate": "2023-01-10",
     "endDate": "2023-05-15", "image": "green.jpg"  },
   { "_id": "CS102", "name": "Comp Theory", "number": "CS3800", "startDate": "2023-01-10",
-    "endDate": "2023-05-15", "image": "red.jpg"  },
-  { "_id": "CS103", "name": "OOD", "number": "CS3500", "startDate": "2023-01-10",
-    "endDate": "2023-05-15", "image": "reactjs.jpg"  },
-  { "_id": "CS104", "name": "Fundies 3", "number": "CS2990", "startDate": "2023-01-10",
-    "endDate": "2023-05-15", "image": "green.jpg"  },
-  { "_id": "CS105", "name": "Discrete Structures", "number": "CS1800", "startDate": "2023-01-10",
-    "endDate": "2023-05-15", "image": "blue.jpg"  }
+    "endDate": "2023-05-15", "image": "red.jpg"  }
 ]
