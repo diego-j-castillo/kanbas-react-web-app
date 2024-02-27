@@ -1,11 +1,11 @@
 import { Link, useParams } from "react-router-dom";
 import "../../styles.css";
 import {FaArrowAltCircleRight, FaBan, FaBell, FaBullhorn, FaCalendar, FaChartBar, FaDownload, FaRegCheckCircle, FaRegDotCircle, FaTimes} from "react-icons/fa";
-import { assignments } from "../../Database";
+import db from "../../Database";
 
 function CourseStatus() {
   const { courseId } =  useParams();
-  const assignmentList = assignments.filter(
+  const assignmentList = db.assignments.filter(
     (assignment) => assignment.course === courseId);
 
   return (

@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes} from "react-router-dom";
+import { Navigate, Route, Routes, useParams} from "react-router-dom";
 import CourseNavigation from "./Navigation";
 import "../styles.css";
 import "./index.css"
@@ -6,11 +6,15 @@ import Modules from "./Modules";
 import Home from "./Home";
 import CourseHeader from "./CourseHeader";
 import Assignments from "./Assignments";
+import { CourseType } from "..";
 
-function Courses() {
+function Courses({courses} : {courses: CourseType[]}) {
+  const { courseId } = useParams();
+  const course = courses.find((course) => course._id === courseId);
+  
   return (
     <div>
-      <CourseHeader/>
+      <CourseHeader course={course}/>
       <div className="d-flex">
         <div className="d-none d-md-block wd-column">
           <CourseNavigation />

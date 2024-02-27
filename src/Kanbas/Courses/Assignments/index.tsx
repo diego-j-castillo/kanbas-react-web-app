@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+import db from "../../Database";
 import "../index.css";
 import { FaCheckCircle, FaEllipsisV, FaNewspaper, FaPlus, FaPlusCircle } from "react-icons/fa";
 
 function Assignments() {
   const { courseId } =  useParams();
-  const assignmentList = assignments.filter(
+  const assignmentList = db.assignments.filter(
     (assignment) => assignment.course === courseId);
   
   return(

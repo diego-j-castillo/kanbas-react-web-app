@@ -19,6 +19,8 @@
 
 .wd-modules > li > div {
   padding: 6px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-left: 1px solid gray !important;
 }
 
@@ -42,6 +44,13 @@
 .wd-modules > a {
   color: red;
   text-decoration: none;
+}
+
+.wd-modules button {
+  border-radius: 0.375rem;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 14px;
 }
 
 .btn-white.override-bs {
@@ -102,3 +111,7 @@
   color: red !important;
 }
 
+.wd-input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
