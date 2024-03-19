@@ -4,9 +4,8 @@ import { FaBars, FaChevronDown, FaChevronRight, FaEye, FaGlasses } from "react-i
 import CourseNavigation from "./Navigation";
 import KanbasNavigation from "../Navigation";
 import { useState } from "react";
-import { CourseType } from "..";
 
-function CourseHeader({course} : {course? : CourseType}) {
+function CourseHeader({course} : any) {
   
   const { pathname } = useLocation();
   let pathParams = pathname.split('/');

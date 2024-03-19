@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import { CourseType } from "..";
+
+type CourseType = { 
+  _id: string, name: string, number: string, 
+  startDate: string, endDate: string, image: string };
 
 function Dashboard(
   { courses, course, setCourse, addNewCourse, deleteCourse, updateCourse } : {
