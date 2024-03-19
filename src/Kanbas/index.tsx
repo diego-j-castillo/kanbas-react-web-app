@@ -8,6 +8,7 @@ import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
 
+const API_BASE = process.env.REACT_APP_BASE;
 function Kanbas() {
   const [courses, setCourses] = useState<any[]>([]);
   const [course, setCourse] = useState({
@@ -15,7 +16,7 @@ function Kanbas() {
     startDate: "2023-09-10", endDate: "2023-12-15",
     image: "reactjs.jpg"
   });
-  const COURSES_API = "http://localhost:4000/api/courses";
+  const COURSES_API = `${API_BASE}/api/courses`;
 
   const updateCourse = async () => {
     const response = await axios.put(`${COURSES_API}/${course._id}`, course);
