@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+const API_BASE = process.env.REACT_APP_API_BASE;
 
 function WorkingWithObjects() {
   const [assignment, setAssignment] = useState({
@@ -11,8 +12,8 @@ function WorkingWithObjects() {
     id: 2, name: "NodeJS",
     description: "Weeks 9 and 10 over NodeJS", course: "CS4550",
   });
-  const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment";
-  const MODULE_URL = "http://localhost:4000/a5/module";
+  const ASSIGNMENT_URL = `${API_BASE}/a5/assignment`;
+  const MODULE_URL = `${API_BASE}/a5/module`;
 
   const fetchAssignment = async () => {
     const response = await axios.get(`${ASSIGNMENT_URL}`);
@@ -38,11 +39,11 @@ function WorkingWithObjects() {
       <button className="btn btn-primary" onClick={fetchAssignment}>
         Fetch Assignment </button>
       <h4>Retrieving Objects</h4>
-      <a className="btn btn-primary" href="http://localhost:4000/a5/assignment">
+      <a className="btn btn-primary" href={`${ASSIGNMENT_URL}`}>
         Get Assignment
       </a>
       <h4>Retrieving Properties</h4>
-      <a className="btn btn-primary" href="http://localhost:4000/a5/assignment/title">
+      <a className="btn btn-primary" href={`${ASSIGNMENT_URL}/title`}>
         Get Title
       </a>
       <h4>Modifying Object Properties</h4>
